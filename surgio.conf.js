@@ -33,4 +33,10 @@ module.exports = {
   },
   urlBase: 'https://surgio.thynanami.dev/',
   analytics: false,
+  cache: process.env.REDIS_URL
+  ? {
+    type: 'redis',
+    redisUrl: process.env.REDIS_URL,
+  }
+  : undefined,
 };
