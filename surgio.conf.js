@@ -26,5 +26,10 @@ module.exports = {
   surgeConfig: {
     resolveHostname: false,
   },
+  gateway: {
+    auth: true,
+    accessToken: 'SueDUNINGERNEmOB',
+    viewerToken: 'swakeRNBlEaUtAcH',
+  },
   analytics: false,
 };
