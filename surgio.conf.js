@@ -31,5 +31,6 @@ module.exports = {
     accessToken: 'SueDUNINGERNEmOB',
     viewerToken: 'swakeRNBlEaUtAcH',
   },
+  urlBase: 'https://surgio.thynanami.dev/',
   analytics: false,
 };
