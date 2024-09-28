@@ -45,6 +45,7 @@ hide-crash-reporter-request = 1
 🇺🇸 USTest = url-test, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, usFilter) }}
 🔰 节点选择 = select, 🇭🇰 HKTest, {{ getNodeNames(nodeList) }}
 📲 电报吹水 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
+🎮 Steam = select, 🔰 节点选择, DIRECT,{{ getNodeNames(nodeList) }}
 📹 YouTube = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 🎥 NETFLIX = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 📺 巴哈姆特 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
@@ -66,6 +67,7 @@ PROCESS-NAME,/Applications/TeamViewer.app/Contents/MacOS/TeamViewer,🔰 节点�
 PROCESS-NAME,Adobe Photoshop ????,REJECT
 # PROCESS-NAME,prl_naptd,🔰 节点选择
 DOMAIN,appstorrent.ru,DIRECT
+RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
 PROCESS-NAME,oss-browser,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Global.list,🔰 节点选择
@@ -76,6 +78,7 @@ RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/YouTube.list,📹 YouTube
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/AbemaTV.list,📺 AbemaTV
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Telegram.list,📲 电报吹水
+RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/Steam.list,🎮 Steam
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/GlobalMedia.list,🌍 国外媒体
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/BiliApi.list,🌏 Bili API
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/BiliRes.list,🌏 Bili Res
