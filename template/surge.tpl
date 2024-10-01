@@ -69,10 +69,10 @@ PROCESS-NAME,Adobe Photoshop ????,REJECT
 # PROCESS-NAME,prl_naptd,🔰 节点选择
 DOMAIN,appstorrent.ru,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/USGov.list,🧑‍⚖️ USGov
 PROCESS-NAME,oss-browser,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Global.list,🔰 节点选择
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/USGov.list,🧑‍⚖️ USGov
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/Netflix.list,🎥 NETFLIX
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/Bahamut.list,📺 巴哈姆特
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Hijacking.list,🛑 劫持拦截
