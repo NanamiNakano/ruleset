@@ -44,7 +44,7 @@ hide-crash-reporter-request = 1
 🇭🇰 HKTest = url-test, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, hkFilter) }}
 🇺🇸 USTest = url-test, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, usFilter) }}
 🔰 节点选择 = select, 🇭🇰 HKTest, {{ getNodeNames(nodeList) }}
-
+🧑‍⚖️ USGov = select, 🇺🇸 USTest, {{ getNodeNames(nodeList) }}
 📲 电报吹水 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 🎮 Steam = select, 🔰 节点选择, DIRECT,{{ getNodeNames(nodeList) }}
 📹 YouTube = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
@@ -72,6 +72,7 @@ RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.lis
 PROCESS-NAME,oss-browser,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Global.list,🔰 节点选择
+RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/USGov.list,🧑‍⚖️ USGov
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/Netflix.list,🎥 NETFLIX
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/Bahamut.list,📺 巴哈姆特
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Hijacking.list,🛑 劫持拦截
