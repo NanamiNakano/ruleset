@@ -57,7 +57,7 @@ hide-crash-reporter-request = 1
 📖 知乎 Res = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
 🌍 国外媒体 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 🔞️ ExHentai = select,🇺🇸 USTest, 🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-🍎 苹果服务 = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
+🍎 苹果服务 = select,DIRECT,🇺🇸 USTest, 🔰 节点选择,{{ getNodeNames(nodeList) }}
 Ⓜ️ 微软服务 = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
 🛑 劫持拦截 = select,REJECT,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
 🐟 规则外路由选择 = select,🔰 节点选择,REJECT,DIRECT,{{ getNodeNames(nodeList) }}
@@ -70,6 +70,7 @@ PROCESS-NAME,Adobe Photoshop ????,REJECT
 DOMAIN,appstorrent.ru,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/US.list,🇺🇸 US DIRECT
+RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Apple.list,🍎 苹果服务
 PROCESS-NAME,oss-browser,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Global.list,🔰 节点选择
@@ -87,7 +88,6 @@ RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ExHentai.list,🔞️ ExHentai
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ZhihuApi.list,📖 知乎 API
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ZhihuApi.list,📖 知乎 Res
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Apple.list,🍎 苹果服务
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/MSServices.list,Ⓜ️ 微软服务
 GEOIP,CN,DIRECT
 RULE-SET,SYSTEM,DIRECT
