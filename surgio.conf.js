@@ -10,6 +10,8 @@ module.exports = {
   ],
   customFilters: {
     // hktFilter: utils.useKeywords(['hkt', 'HKT']),
+    usFilter: nodeConfig => nodeConfig.nodeName.includes('🇺🇸'),
+    hkFilter: nodeConfig => nodeConfig.nodeName.includes('🇭🇰'),
   },
   artifacts: [
     {
