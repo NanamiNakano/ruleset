@@ -15,13 +15,23 @@ module.exports = {
   },
   artifacts: [
     {
-      name: 'dler_gamer.conf',
+      name: 'dler_gamer_macos.conf',
       template: 'surge',
       provider: 'dler_gamer',
     },
     {
-      name: 'dler.conf',
+      name: 'dler_macos.conf',
       template: 'surge',
+      provider: 'dler',
+    },
+    {
+      name: 'dler_gamer_ios.conf',
+      template: 'surge_ios',
+      provider: 'dler_gamer',
+    },
+    {
+      name: 'dler_ios.conf',
+      template: 'surge_ios',
       provider: 'dler',
     }
   ],
