@@ -38,8 +38,8 @@ hide-crash-reporter-request = 1
 {{ getSurgeNodes(nodeList) }}
 
 [Proxy Group]
-🇭🇰 HKTest = url-test, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, customFilters.hkFilter) }}
-🇺🇸 USTest = url-test, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, customFilters.usFilter) }}
+🇭🇰 HKTest = smart, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, customFilters.hkFilter) }}
+🇺🇸 USTest = smart, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, customFilters.usFilter) }}
 🔰 节点选择 = select, 🇭🇰 HKTest, {{ getNodeNames(nodeList) }}
 🇺🇸 US DIRECT = select, 🇺🇸 USTest, {{ getNodeNames(nodeList) }}
 📲 电报吹水 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
