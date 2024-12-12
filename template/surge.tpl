@@ -6,7 +6,7 @@ hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 exclude-simple-hostnames = true
 dns-server = 223.5.5.5, 1.1.1.1, 8.8.8.8, system
 encrypted-dns-server = quic://dns.cooluc.com, https://doh.apad.pro/dns-query, https://1.0.0.1/dns-query
-read-etc-hosts = true.,;/'
+read-etc-hosts = true
 
 ipv6 = false
 ipv6-vif = off

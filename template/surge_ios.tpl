@@ -6,7 +6,6 @@ hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 exclude-simple-hostnames = true
 dns-server = 223.5.5.5, 1.1.1.1, 8.8.8.8, system
 encrypted-dns-server = quic://dns.cooluc.com, https://doh.apad.pro/dns-query, https://1.0.0.1/dns-query
-read-etc-hosts = true.,;/'
 
 ipv6 = false
 ipv6-vif = off
@@ -22,7 +21,6 @@ always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msf
 geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 test-timeout = 5
 http-api-web-dashboard = true
-vif-mode = v3
 udp-policy-not-supported-behaviour = REJECT
 
 [Host]
