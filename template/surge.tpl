@@ -28,10 +28,6 @@ http-api-web-dashboard = true
 vif-mode = v3
 udp-policy-not-supported-behaviour = REJECT
 
-[Host]
-*.bilivideo.com = server:223.5.5.5
-*.jd.com = server:119.29.29.29
-
 [Replica]
 hide-apple-request = 1
 keyword-filter-type = none
