@@ -37,13 +37,12 @@ hide-crash-reporter-request = 1
 🔰 节点选择 = select, 🇭🇰 HKTest, {{ getNodeNames(nodeList) }}
 🇺🇸 US DIRECT = select, 🇺🇸 USTest, {{ getNodeNames(nodeList) }}
 📲 电报吹水 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
+📲 WeChat = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 🎮 Steam = select, 🔰 节点选择, DIRECT,{{ getNodeNames(nodeList) }}
 📹 YouTube = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 🎥 NETFLIX = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 📺 巴哈姆特 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 📺 AbemaTV = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-🌏 Bili API = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
-🌏 Bili Res = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
 📖 知乎 API = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
 📖 知乎 Res = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
 🌍 国外媒体 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
@@ -54,26 +53,22 @@ hide-crash-reporter-request = 1
 🐟 规则外路由选择 = select,🔰 节点选择,REJECT,DIRECT,{{ getNodeNames(nodeList) }}
 
 [Rule]
-DOMAIN-SET,https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge2.txt,REJECT
-# PROCESS-NAME,prl_naptd,🔰 节点选择
 DOMAIN,appstorrent.ru,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/US.list,🇺🇸 US DIRECT
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Apple.list,🍎 苹果服务
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Apple/Apple.list,🍎 苹果服务
 PROCESS-NAME,oss-browser,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Global.list,🔰 节点选择
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/Netflix.list,🎥 NETFLIX
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/Bahamut.list,📺 巴哈姆特
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Hijacking.list,🛑 劫持拦截
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Advertising.list,🛑 劫持拦截
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/YouTube.list,📹 YouTube
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Media/AbemaTV.list,📺 AbemaTV
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/Telegram.list,📲 电报吹水
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Proxy.list,🔰 节点选择
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/Netflix.list,🎥 NETFLIX
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/Bahamut.list,📺 巴哈姆特
+RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.list,🛑 劫持拦截
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/YouTube.list,📹 YouTube
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/AbemaTV.list,📺 AbemaTV
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Telegram.list,📲 电报吹水
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/WeChat.list,📲 WeChat
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/Steam.list,🎮 Steam
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/GlobalMedia.list,🌍 国外媒体
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/BiliApi.list,🌏 Bili API
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ConnersHua/Surge/Ruleset/BiliRes.list,🌏 Bili Res
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/!CN.list,🌍 国外媒体
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ExHentai.list,🔞️ ExHentai
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ZhihuApi.list,📖 知乎 API
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ZhihuApi.list,📖 知乎 Res
