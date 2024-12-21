@@ -53,16 +53,16 @@ hide-crash-reporter-request = 1
 🐟 规则外路由选择 = select,🔰 节点选择,REJECT,DIRECT,{{ getNodeNames(nodeList) }}
 
 [Rule]
+RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.list,🛑 劫持拦截
+GEOIP,CN,DIRECT
+RULE-SET,SYSTEM,DIRECT
+RULE-SET,LAN,DIRECT
 DOMAIN,appstorrent.ru,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/US.list,🇺🇸 US DIRECT
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Apple/Apple.list,🍎 苹果服务
-PROCESS-NAME,oss-browser,🔰 节点选择
-RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
-RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Proxy.list,🔰 节点选择
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/Netflix.list,🎥 NETFLIX
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/Bahamut.list,📺 巴哈姆特
-RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.list,🛑 劫持拦截
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/YouTube.list,📹 YouTube
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/AbemaTV.list,📺 AbemaTV
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Telegram.list,📲 电报吹水
@@ -73,9 +73,9 @@ RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ExHentai.li
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ZhihuApi.list,📖 知乎 API
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ZhihuApi.list,📖 知乎 Res
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/MSServices.list,Ⓜ️ 微软服务
-GEOIP,CN,DIRECT
-RULE-SET,SYSTEM,DIRECT
-RULE-SET,LAN,DIRECT
+PROCESS-NAME,oss-browser,🔰 节点选择
+RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Proxy.list,🔰 节点选择
 
 # Final
 FINAL,🐟 规则外路由选择,dns-failed
