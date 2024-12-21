@@ -75,7 +75,7 @@ RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.l
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/YouTube.list,📹 YouTube
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/AbemaTV.list,📺 AbemaTV
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Telegram.list,📲 电报吹水
-RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/WeChat.list,📲 WeChat
+RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/WeChat.list,📲 WeChat
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/Steam.list,🎮 Steam
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/!CN.list,🌍 国外媒体
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ExHentai.list,🔞️ ExHentai
