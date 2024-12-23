@@ -54,7 +54,6 @@ hide-crash-reporter-request = 1
 
 [Rule]
 RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.list,🛑 劫持拦截
-GEOIP,CN,DIRECT
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,LAN,DIRECT
 DOMAIN,appstorrent.ru,DIRECT
@@ -76,6 +75,7 @@ RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/MSServices.
 PROCESS-NAME,oss-browser,🔰 节点选择
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Proxy.list,🔰 节点选择
+GEOIP,CN,DIRECT
 
 # Final
 FINAL,🐟 规则外路由选择,dns-failed
