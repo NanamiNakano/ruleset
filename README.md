@@ -29,4 +29,4 @@ I wrote custom filters to filter nodes in Hong Kong and the United States. These
 
 ### Config
 
-**PLEASE** modify `surgio.conf.js` and all files under `provider` directory to meet your need. Please read documents on surgio.js.org.
+**PLEASE** modify `surgio.conf.js` and all files under `provider` directory to meet your need. Please read documents on [surgio.js.org](https://surgio.js.org/guide.html).
