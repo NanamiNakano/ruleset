@@ -63,7 +63,7 @@ PROCESS-NAME,Adobe Photoshop ????,REJECT
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,LAN,DIRECT
 PROCESS-NAME,/Applications/QQ.app/Contents/MacOS/QQ,DIRECT
-DOMAIN,appstorrent.ru,DIRECT
+# DOMAIN,appstorrent.ru,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/US.list,🇺🇸 US DIRECT
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Apple/Apple.list,🍎 苹果服务

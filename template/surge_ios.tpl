@@ -56,7 +56,7 @@ hide-crash-reporter-request = 1
 RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.list,🛑 劫持拦截
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,LAN,DIRECT
-DOMAIN,appstorrent.ru,DIRECT
+# DOMAIN,appstorrent.ru,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/US.list,🇺🇸 US DIRECT
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Apple/Apple.list,🍎 苹果服务
