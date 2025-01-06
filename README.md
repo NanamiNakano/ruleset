@@ -9,8 +9,8 @@ This project is using `surgio`. Documents can be found [here](https://surgio.js.
 ### Generate
 
 ```bash
-npm install
-npx surgio generate
+pnpm install
+pnpm dlx surgio generate
 ```
 
 ### Dotenv
