@@ -48,7 +48,7 @@ hide-crash-reporter-request = 1
 🌍 国外媒体 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 🔞️ ExHentai = select,🇺🇸 USTest, 🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
 🍎 苹果服务 = select,DIRECT,🇺🇸 USTest, 🔰 节点选择,{{ getNodeNames(nodeList) }}
-🔎 GoogleSearch = select,DIRECT,🇺🇸 USTest, 🔰 节点选择,{{ getNodeNames(nodeList) }}
+🔎 Google = select,🇺🇸 USTest, 🔰 节点选择,{{ getNodeNames(nodeList) }}
 Ⓜ️ 微软服务 = select,DIRECT,🇺🇸 USTest, 🔰 节点选择,{{ getNodeNames(nodeList) }}
 🛑 劫持拦截 = select,REJECT,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
 🐟 规则外路由选择 = select,🔰 节点选择,REJECT,DIRECT,{{ getNodeNames(nodeList) }}
@@ -60,7 +60,7 @@ RULE-SET,LAN,DIRECT
 # DOMAIN,appstorrent.ru,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/US.list,🇺🇸 US DIRECT
-RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Google/GoogleSearch.list,🔎 GoogleSearch
+RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Google.list,🔎 Google
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Apple/Apple.list,🍎 苹果服务
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/Netflix.list,🎥 NETFLIX
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/Bahamut.list,📺 巴哈姆特
