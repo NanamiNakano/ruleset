@@ -15,30 +15,12 @@ module.exports = {
   },
   artifacts: [
     {
-      name: 'dler_macos.conf',
+      name: 'dler_nanami.conf',
       template: 'surge',
       provider: 'dler',
     },
-    {
-      name: 'dler_ios.conf',
-      template: 'surge_ios',
-      provider: 'dler',
-    }
   ],
   surgeConfig: {
     resolveHostname: false,
   },
-  gateway: {
-    auth: true,
-    accessToken: 'SueDUNINGERNEmOB',
-    viewerToken: 'swakeRNBlEaUtAcH',
-  },
-  urlBase: 'https://surgio.thynanami.dev/',
-  analytics: false,
-  cache: process.env.REDIS_URL
-  ? {
-    type: 'redis',
-    redisUrl: process.env.REDIS_URL,
-  }
-  : undefined,
 };

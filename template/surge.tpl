@@ -6,13 +6,12 @@ hijack-dns = 8.8.8.8:53, 8.8.4.4:53
 exclude-simple-hostnames = true
 dns-server = 223.5.5.5, 1.1.1.1, 8.8.8.8, system
 encrypted-dns-server = quic://dns.cooluc.com, https://doh.apad.pro/dns-query, https://1.0.0.1/dns-query
-read-etc-hosts = true
+read-etc-hosts = true #!MACOS-ONLY
 
 ipv6 = false
 ipv6-vif = off
-# 以下参数仅供 macOS 版本使用（多端口监听仅 Surge 3 支持）
-http-listen = 0.0.0.0
-socks5-listen = 0.0.0.0
+http-listen = 0.0.0.0 #!MACOS-ONLY
+socks5-listen = 0.0.0.0 #!MACOS-ONLY
 # 测速地址
 internet-test-url = http://apple.cn
 proxy-test-url = http://google.com
@@ -25,7 +24,7 @@ always-real-ip = msftconnecttest.com, msftncsi.com, *.msftconnecttest.com, *.msf
 geoip-maxmind-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 test-timeout = 5
 http-api-web-dashboard = true
-vif-mode = v3
+vif-mode = v3 #!MACOS-ONLY
 udp-policy-not-supported-behaviour = REJECT
 
 [Replica]
@@ -60,10 +59,10 @@ hide-crash-reporter-request = 1
 
 [Rule]
 RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.list,🛑 劫持拦截
-PROCESS-NAME,Adobe Photoshop ????,REJECT
+PROCESS-NAME,Adobe Photoshop ????,REJECT #!MACOS-ONLY
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,LAN,DIRECT
-PROCESS-NAME,/Applications/QQ.app/Contents/MacOS/QQ,DIRECT
+PROCESS-NAME,/Applications/QQ.app/Contents/MacOS/QQ,DIRECT #!MACOS-ONLY
 # DOMAIN,appstorrent.ru,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/SteamCN.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/US.list,🇺🇸 US DIRECT
@@ -82,8 +81,8 @@ RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ZhihuApi.li
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/ZhihuApi.list,📖 知乎 Res
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/MSServices.list,Ⓜ️ 微软服务
 PROCESS-NAME,oss-browser,🔰 节点选择
-PROCESS-NAME,/Applications/TeamViewer.app/Contents/MacOS/TeamViewer,🔰 节点选择
-# PROCESS-NAME,prl_naptd,🔰 节点选择
+PROCESS-NAME,/Applications/TeamViewer.app/Contents/MacOS/TeamViewer,🔰 节点选择 #!MACOS-ONLY
+# PROCESS-NAME,prl_naptd,🔰 节点选择 #!MACOS-ONLY
 RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/PROXY.list,🔰 节点选择
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Proxy.list,🔰 节点选择
 GEOIP,CN,DIRECT
