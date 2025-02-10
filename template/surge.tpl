@@ -36,26 +36,29 @@ hide-crash-reporter-request = 1
 {{ getSurgeNodes(nodeList) }}
 
 [Proxy Group]
-🇭🇰 HKTest = smart, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, customFilters.hkFilter) }}
-🇺🇸 USTest = smart, interval=300, tolerance=50, timeout=2, {{ getNodeNames(nodeList, customFilters.usFilter) }}
-🔰 节点选择 = select, 🇭🇰 HKTest, {{ getNodeNames(nodeList) }}
-🇺🇸 US DIRECT = select, 🇺🇸 USTest, {{ getNodeNames(nodeList) }}
-📲 电报吹水 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-📲 WeChat = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-🎮 Steam = select, 🔰 节点选择, DIRECT,{{ getNodeNames(nodeList) }}
-📹 YouTube = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-🎥 NETFLIX = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-📺 巴哈姆特 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-📺 AbemaTV = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-📖 知乎 API = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
-📖 知乎 Res = select,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
-🌍 国外媒体 = select,🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-🔞️ ExHentai = select,🇺🇸 USTest, 🔰 节点选择,DIRECT,{{ getNodeNames(nodeList) }}
-🍎 苹果服务 = select,DIRECT,🇺🇸 USTest, 🔰 节点选择,{{ getNodeNames(nodeList) }}
-🔎 Google = select,🇺🇸 USTest, 🔰 节点选择,{{ getNodeNames(nodeList) }}
-Ⓜ️ 微软服务 = select,DIRECT,🇺🇸 USTest, 🔰 节点选择,{{ getNodeNames(nodeList) }}
-🛑 劫持拦截 = select,REJECT,DIRECT,🔰 节点选择,{{ getNodeNames(nodeList) }}
-🐟 规则外路由选择 = select,🔰 节点选择,REJECT,DIRECT,{{ getNodeNames(nodeList) }}
+🇭🇰 HKTest = smart, {{ getNodeNames(nodeList, customFilters.hkFilter) }}
+🇺🇸 USTest = smart, {{ getNodeNames(nodeList, customFilters.usFilter) }}
+🇯🇵 JPTest = smart, {{ getNodeNames(nodeList, customFilters.jpFilter) }}
+🇸🇬 SGTest = smart, {{ getNodeNames(nodeList, customFilters.sgFilter) }}
+🏳️ Fallback = fallback, 🇭🇰 HKTest, 🇺🇸 USTest, 🇯🇵 JPTest, 🇸🇬 SGTest
+🔰 节点选择 = select, include-all-proxies=true, 🇭🇰 HKTest, 🇺🇸 USTest, 🇯🇵 JPTest, 🇸🇬 SGTest, 🏳️ Fallback
+🇺🇸 US DIRECT = select, 🇺🇸 USTest, {{ getNodeNames(nodeList, customFilters.usFilter) }}
+📲 电报吹水 = select, include-all-proxies=true, 🔰 节点选择, DIRECT
+📲 WeChat = select, include-all-proxies=true, 🔰 节点选择, DIRECT
+🎮 Steam = select, include-all-proxies=true, 🔰 节点选择, DIRECT
+📹 YouTube = select, include-all-proxies=true, 🔰 节点选择, DIRECT
+🎥 NETFLIX = select, include-all-proxies=true, 🔰 节点选择, DIRECT
+📺 巴哈姆特 = select, include-all-proxies=true, 🔰 节点选择, DIRECT
+📺 AbemaTV = select, include-all-proxies=true, 🔰 节点选择, DIRECT
+📖 知乎 API = select, include-all-proxies=true, DIRECT, 🔰 节点选择
+📖 知乎 Res = select, include-all-proxies=true, DIRECT, 🔰 节点选择
+🌍 国外媒体 = select, include-all-proxies=true, include-other-group="🏳️ Fallback", 🔰 节点选择, DIRECT
+🔞️ ExHentai = select, include-all-proxies=true, 🇺🇸 USTest, 🔰 节点选择,DIRECT
+🍎 苹果服务 = select, include-all-proxies=true, 🇺🇸 USTest, 🔰 节点选择
+🔎 Google = select, include-all-proxies=true, 🇺🇸 USTest, 🔰 节点选择
+Ⓜ️ 微软服务 = select, include-all-proxies=true, 🇺🇸 USTest, 🔰 节点选择
+🛑 劫持拦截 = select, include-all-proxies=true, REJECT, DIRECT , 🔰 节点选择
+🐟 规则外路由选择 = select, include-all-proxies=true, 🔰 节点选择, REJECT, DIRECT
 
 [Rule]
 RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.list,🛑 劫持拦截

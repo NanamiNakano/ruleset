@@ -12,6 +12,8 @@ module.exports = {
     // hktFilter: utils.useKeywords(['hkt', 'HKT']),
     usFilter: nodeConfig => nodeConfig.nodeName.includes('🇺🇸'),
     hkFilter: nodeConfig => nodeConfig.nodeName.includes('🇭🇰'),
+    jpFilter: nodeConfig => nodeConfig.nodeName.includes('🇯🇵'),
+    sgFilter: nodeConfig => nodeConfig.nodeName.includes('🇸🇬'),
   },
   artifacts: [
     {
