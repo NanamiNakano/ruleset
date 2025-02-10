@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "surgio generate",
-    "upload:icloud": "cp ./dist/* '/Users/nanami/Library/Mobile Documents/iCloud~com~nssurge~inc/Documents/'",
+    "upload:icloud": "cp ./dist/* $HOME'/Library/Mobile Documents/iCloud~com~nssurge~inc/Documents/'",
     "start": "node gateway.js"
   },
   "dependencies": {
