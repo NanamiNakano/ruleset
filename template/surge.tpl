@@ -62,7 +62,8 @@ hide-crash-reporter-request = 1
 
 [Rule]
 RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Reject.list,🛑 劫持拦截
-PROCESS-NAME,Adobe Photoshop ????,REJECT #!MACOS-ONLY
+PROCESS-NAME,Adobe Photoshop*,REJECT #!MACOS-ONLY
+PROCESS-NAME,Screen Studio*,REJECT #!MACOS-ONLY
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,LAN,DIRECT
 PROCESS-NAME,/Applications/QQ.app/Contents/MacOS/QQ,DIRECT #!MACOS-ONLY
