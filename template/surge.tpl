@@ -48,6 +48,7 @@ hide-crash-reporter-request = 1
 🎮 Steam = select, include-all-proxies=true, 🔰 节点选择, DIRECT
 📹 YouTube = select, include-all-proxies=true, 🔰 节点选择, DIRECT
 🎥 NETFLIX = select, include-all-proxies=true, 🔰 节点选择, DIRECT
+🎥 Bili = select, include-all-proxies=true, 🔰 节点选择, DIRECT
 📺 巴哈姆特 = select, include-all-proxies=true, 🔰 节点选择, DIRECT
 📺 AbemaTV = select, include-all-proxies=true, 🔰 节点选择, DIRECT
 📖 知乎 API = select, include-all-proxies=true, DIRECT, 🔰 节点选择
@@ -73,6 +74,7 @@ RULE-SET,https://raw.githubusercontent.com/NanamiNakano/rules/master/US.list,�
 RULE-SET,https://github.com/NanamiNakano/rules/releases/latest/download/Google.list,🔎 Google
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Apple/Apple.list,🍎 苹果服务
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/Netflix.list,🎥 NETFLIX
+RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/bilibili.list,🎥 Bili
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/Bahamut.list,📺 巴哈姆特
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/YouTube.list,📹 YouTube
 RULE-SET,https://github.com/ConnersHua/RuleGo/raw/refs/heads/master/Surge/Ruleset/Extra/Streaming/Video/AbemaTV.list,📺 AbemaTV
